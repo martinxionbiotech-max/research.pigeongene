@@ -24,4 +24,9 @@ schema_type: definedtermset
 | 群体基因组学 | Population Genomics | 研究群体水平基因组变异的学科。 |
 | DOI | Digital Object Identifier | 数字对象唯一标识符，用于永久标识与定位学术文献。 |
 | PubMed | PubMed | 美国国家医学图书馆提供的生物医学文献数据库。 |
+| 荟萃分析 | Meta-analysis | 综合多项研究结果进行定量合并分析的统计方法。 |
+| 随机对照试验 | Randomized Controlled Trial | 随机分组并设立对照的临床试验，因果推断较强。 |
+| 队列研究 | Cohort Study | 对特定人群长期追踪观察的流行病学研究方法。 |
+| 混杂因素 | Confounding Factor | 影响研究结果解读、可能干扰因果判断的额外变量。 |
+| 可重复性 | Reproducibility | 研究结果能被其他研究者独立重复验证的程度。 |
 

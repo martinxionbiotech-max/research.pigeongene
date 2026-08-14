@@ -1,12 +1,12 @@
 ---
 title: 科研文献
-description: 本站收录 6 篇真实可追溯的赛鸽科研文献。
+description: 本站收录 9 篇真实可追溯的赛鸽科研文献，涵盖性能基因、基因组学与数量遗传学。
 schema_type: index
 ---
 
 # 科研文献
 
-本站收录 6 篇真实可追溯的赛鸽科研文献。
+本站收录 9 篇真实可追溯的赛鸽科研文献。
 
 | 文献 | 作者 | 年份 | 期刊 | 证据级别 |
 |---|---|---|---|---|
@@ -16,6 +16,8 @@ schema_type: index
 | [鸟类呼吸系统生物学](avian-respiratory-biology.md) | 美国国家医学图书馆 | 2004 | PMC Article | Background（背景性综述） |
 | [LDHA 基因单核苷酸多态性与信鸽比赛成绩](ldha-snp-racing-performance.md) | WS Proskura | 2014 | Journal of Poultry Science | Association（关联性证据） |
 | [数量遗传学导论（教科书）](quantitative-genetics-textbook.md) | Falconer DS 与 Mackay TFC | 1996 | Textbook（教科书） | Methodology（方法论） |
+| [家鸽参考基因组与头冠多样性演化](pigeon-reference-genome.md) | Michael D. Shapiro 等 | 2013 | Science | Genomic Resource（基因组资源） |
+| [家鸽品种分化与野化种群祖先](pigeon-divergence-ancestry.md) | Sydney A. Stringham 等 | 2012 | Current Biology | Population Genetics（群体遗传学） |
+| [鸟类基因组演化与适应性](avian-genome-evolution.md) | Guojie Zhang 等 | 2014 | Science | Comparative Genomics（比较基因组学） |
 
 > 所有 DOI/PubMed 均可点击验证，绝无伪造文献。
-
