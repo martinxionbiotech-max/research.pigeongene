@@ -1,3 +1,9 @@
+---
+title: LDHA 基因单核苷酸多态性与信鸽比赛成绩
+description: 英文标题：Single nucleotide polymorphism in the LDHA gene and racing performance in homing pigeons
+schema_type: scholarlyarticle
+---
+
 # LDHA 基因单核苷酸多态性与信鸽比赛成绩
 
 **英文标题**：Single nucleotide polymorphism in the LDHA gene and racing performance in homing pigeons

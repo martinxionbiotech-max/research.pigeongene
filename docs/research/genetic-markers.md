@@ -1,3 +1,9 @@
+---
+title: 遗传标记
+description: 遗传标记的识别与应用研究。
+schema_type: article
+---
+
 # 遗传标记
 
 遗传标记的识别与应用研究。

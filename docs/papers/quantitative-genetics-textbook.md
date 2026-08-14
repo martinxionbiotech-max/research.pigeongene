@@ -1,3 +1,9 @@
+---
+title: 数量遗传学导论（教科书）
+description: 英文标题：Introduction to Quantitative Genetics
+schema_type: scholarlyarticle
+---
+
 # 数量遗传学导论（教科书）
 
 **英文标题**：Introduction to Quantitative Genetics

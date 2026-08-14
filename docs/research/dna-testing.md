@@ -1,3 +1,9 @@
+---
+title: DNA 检测
+description: DNA 检测技术在赛鸽中的应用。
+schema_type: article
+---
+
 # DNA 检测
 
 DNA 检测技术在赛鸽中的应用。

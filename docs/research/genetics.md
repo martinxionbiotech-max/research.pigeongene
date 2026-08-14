@@ -1,3 +1,9 @@
+---
+title: 遗传学研究
+description: 赛鸽遗传学基础研究与候选基因分析。
+schema_type: article
+---
+
 # 遗传学研究
 
 赛鸽遗传学基础研究与候选基因分析。

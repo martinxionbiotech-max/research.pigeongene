@@ -1,3 +1,9 @@
+---
+title: 赛鸽常备遗传变异的自然选择印记
+description: 英文标题：Signatures of natural selection on standing genetic variation in racing pigeons
+schema_type: scholarlyarticle
+---
+
 # 赛鸽常备遗传变异的自然选择印记
 
 **英文标题**：Signatures of natural selection on standing genetic variation in racing pigeons

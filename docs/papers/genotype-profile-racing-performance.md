@@ -1,3 +1,9 @@
+---
+title: 基因型谱与赛鸽比赛成绩关系的前瞻性研究
+description: 英文标题：Prospective study on genotype profiles and racing performance in racing pigeons
+schema_type: scholarlyarticle
+---
+
 # 基因型谱与赛鸽比赛成绩关系的前瞻性研究
 
 **英文标题**：Prospective study on genotype profiles and racing performance in racing pigeons

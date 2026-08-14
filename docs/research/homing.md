@@ -1,3 +1,9 @@
+---
+title: 归巢研究
+description: 归巢与导航能力的遗传与行为研究。
+schema_type: article
+---
+
 # 归巢研究
 
 归巢与导航能力的遗传与行为研究。

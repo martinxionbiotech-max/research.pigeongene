@@ -1,3 +1,9 @@
+---
+title: 不同家鸽品种肌生成抑制素基因外显子 3 的单核苷酸多态性
+description: 英文标题：Single nucleotide polymorphism in the myostatin gene exon 3 of different domestic pigeon breeds
+schema_type: scholarlyarticle
+---
+
 # 不同家鸽品种肌生成抑制素基因外显子 3 的单核苷酸多态性
 
 **英文标题**：Single nucleotide polymorphism in the myostatin gene exon 3 of different domestic pigeon breeds

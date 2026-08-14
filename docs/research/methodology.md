@@ -1,3 +1,9 @@
+---
+title: 方法论
+description: 数量遗传学与分子检测方法。
+schema_type: article
+---
+
 # 方法论
 
 数量遗传学与分子检测方法。

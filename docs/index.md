@@ -1,3 +1,9 @@
+---
+title: 赛鸽科研中心
+description: 赛鸽科研中心（research.pigeongene.com）是 PigeonGene 数字生态的科研支撑站，收录真实可追溯的赛鸽科研文献与科学方法论。
+schema_type: home
+---
+
 # 赛鸽科研中心
 
 赛鸽科研中心（research.pigeongene.com）是 PigeonGene 数字生态的科研支撑站，收录**真实可追溯**的赛鸽科研文献与科学方法论。

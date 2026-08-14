@@ -1,3 +1,9 @@
+---
+title: 性能研究
+description: 飞行性能相关的遗传与生理研究。
+schema_type: article
+---
+
 # 性能研究
 
 飞行性能相关的遗传与生理研究。

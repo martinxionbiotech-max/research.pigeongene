@@ -1,3 +1,9 @@
+---
+title: 术语表
+description: 
+schema_type: definedtermset
+---
+
 # 术语表
 
 | 术语 | 英文 | 定义 |

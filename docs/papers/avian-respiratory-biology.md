@@ -1,3 +1,9 @@
+---
+title: 鸟类呼吸系统生物学
+description: 英文标题：Avian respiratory biology
+schema_type: scholarlyarticle
+---
+
 # 鸟类呼吸系统生物学
 
 **英文标题**：Avian respiratory biology
