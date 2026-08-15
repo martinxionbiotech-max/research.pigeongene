@@ -6,12 +6,12 @@
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://research.pigeongene.com/#organization",
+        "@id": "https://research.senopigeon.com/#organization",
         "name": "张家口赛诺生物科技有限公司",
         "alternateName": ["PigeonGene · SENO Biotech", "赛诺生物"],
         "legalName": "张家口赛诺生物科技有限公司",
-        "url": "https://pigeongene.com",
-        "logo": "https://pigeongene.com/wp-content/uploads/cropped-cropped-LOGO.png",
+        "url": "https://senopigeon.com",
+        "logo": "https://senopigeon.com/wp-content/uploads/cropped-cropped-LOGO.png",
         "description": "国家高新技术企业，专注赛鸽飞行能力基因检测、病毒检测与 DNA 身份证/亲缘鉴定。",
         "foundingDate": "2014",
         "numberOfEmployees": { "@type": "QuantitativeValue", "value": 15 },
@@ -30,20 +30,20 @@
         "email": "martin@dnatestingexperts.com",
         "telephone": "+86-13323237275",
         "sameAs": [
-          "https://pigeongene.com",
-          "https://genetics.pigeongene.com",
-          "https://health.pigeongene.com",
-          "https://research.pigeongene.com",
-          "https://tools.pigeongene.com"
+          "https://senopigeon.com",
+          "https://genetics.senopigeon.com",
+          "https://health.senopigeon.com",
+          "https://research.senopigeon.com",
+          "https://tools.senopigeon.com"
         ]
       },
       {
         "@type": "WebSite",
-        "@id": "https://research.pigeongene.com/#website",
+        "@id": "https://research.senopigeon.com/#website",
         "name": "PigeonGene 科研中心",
-        "url": "https://research.pigeongene.com/",
+        "url": "https://research.senopigeon.com/",
         "description": "赛鸽科研中心：真实可追溯文献、研究方向、方法论与证据分级，坚持科学严谨、绝不伪造",
-        "publisher": { "@id": "https://research.pigeongene.com/#organization" },
+        "publisher": { "@id": "https://research.senopigeon.com/#organization" },
         "inLanguage": "zh-CN"
       },
       {% if page and page.meta and page.meta.schema_type == 'article' %}
@@ -53,8 +53,8 @@
         "headline": "{{ page.title }}",
         "description": "{{ page.meta.description }}",
         "url": "{{ page.canonical_url }}",
-        "author": { "@id": "https://research.pigeongene.com/#organization" },
-        "publisher": { "@id": "https://research.pigeongene.com/#organization" },
+        "author": { "@id": "https://research.senopigeon.com/#organization" },
+        "publisher": { "@id": "https://research.senopigeon.com/#organization" },
         "inLanguage": "zh-CN",
         "mainEntityOfPage": "{{ page.canonical_url }}"
       },
@@ -71,7 +71,7 @@
           "description": "{{ page.meta.description }}",
           "url": "{{ page.canonical_url }}"
         },
-        "publisher": { "@id": "https://research.pigeongene.com/#organization" },
+        "publisher": { "@id": "https://research.senopigeon.com/#organization" },
         "inLanguage": "zh-CN"
       },
       {% elif page and page.meta and page.meta.schema_type == 'scholarlyarticle' %}
@@ -81,8 +81,8 @@
         "headline": "{{ page.title }}",
         "description": "{{ page.meta.description }}",
         "url": "{{ page.canonical_url }}",
-        "author": { "@id": "https://research.pigeongene.com/#organization" },
-        "publisher": { "@id": "https://research.pigeongene.com/#organization" },
+        "author": { "@id": "https://research.senopigeon.com/#organization" },
+        "publisher": { "@id": "https://research.senopigeon.com/#organization" },
         "inLanguage": "zh-CN",
         "mainEntityOfPage": "{{ page.canonical_url }}"
       },
@@ -116,14 +116,14 @@
         "name": "{{ page.title }}",
         "description": "{{ page.meta.description }}",
         "url": "{{ page.canonical_url }}",
-        "about": { "@id": "https://research.pigeongene.com/#organization" }
+        "about": { "@id": "https://research.senopigeon.com/#organization" }
       },
       {% endif %}
       {
         "@type": "BreadcrumbList",
         "@id": "{{ page.canonical_url }}#breadcrumb",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://research.pigeongene.com/" },
+          { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://research.senopigeon.com/" },
           { "@type": "ListItem", "position": 2, "name": "{{ page.title }}", "item": "{{ page.canonical_url }}" }
         ]
       }
