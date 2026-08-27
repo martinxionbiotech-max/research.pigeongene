@@ -45,3 +45,9 @@ schema_type: scholarlyarticle
 ## 证据等级
 
 **基础资源型研究**（Genomic Resource）——提供参考基因组与基础数据，本身不直接证明性能关联，但为下游研究提供了必要条件。
+
+---
+
+## 主站检测服务
+
+基于科研文献的检测服务，欢迎访问 [赛诺基因检测中心主站 → 知识中心](https://senopigeon.com/zhishi/)。

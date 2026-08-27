@@ -56,3 +56,9 @@ schema_type: article
 
 - [鸟类呼吸系统生物学](../papers/avian-respiratory-biology.md)
 - [不同家鸽品种肌生成抑制素基因外显子 3 的单核苷酸多态性](../papers/mstn-polymorphism-domestic-pigeon.md)
+
+---
+
+## 主站检测服务
+
+了解更多赛鸽基因检测服务，欢迎访问 [赛诺基因检测中心主站 → 知识中心](https://senopigeon.com/zhishi/)。

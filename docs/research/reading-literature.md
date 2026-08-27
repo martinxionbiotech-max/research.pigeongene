@@ -58,3 +58,9 @@ schema_type: article
 
 - [证据分级](evidence-grading.md)
 - [科研文献总览](../papers/index.md)
+
+---
+
+## 主站检测服务
+
+了解更多赛鸽基因检测服务，欢迎访问 [赛诺基因检测中心主站 → 知识中心](https://senopigeon.com/zhishi/)。

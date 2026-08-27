@@ -58,3 +58,8 @@ schema_type: scholarlyarticle
 
 [← 返回科研文献](index.md)
 
+---
+
+## 主站检测服务
+
+基于科研文献的检测服务，欢迎访问 [赛诺基因检测中心主站 → 知识中心](https://senopigeon.com/zhishi/)。

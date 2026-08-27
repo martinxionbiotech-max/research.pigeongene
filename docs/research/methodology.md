@@ -68,3 +68,9 @@ schema_type: article
 - [数量遗传学导论（教科书）](../papers/quantitative-genetics-textbook.md)
 - [证据分级](evidence-grading.md)
 - [遗传标记](genetic-markers.md)
+
+---
+
+## 主站检测服务
+
+了解更多赛鸽基因检测服务，欢迎访问 [赛诺基因检测中心主站 → 知识中心](https://senopigeon.com/zhishi/)。

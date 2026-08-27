@@ -61,3 +61,9 @@ MSTN 多态性研究（Dybus 等，2013）就是典型的"识别"案例——研
 
 - [不同家鸽品种肌生成抑制素基因外显子 3 的单核苷酸多态性](../papers/mstn-polymorphism-domestic-pigeon.md)
 - [DNA 检测](dna-testing.md)
+
+---
+
+## 主站检测服务
+
+了解更多赛鸽基因检测服务，欢迎访问 [赛诺基因检测中心主站 → 知识中心](https://senopigeon.com/zhishi/)。

@@ -63,3 +63,9 @@ schema_type: article
 
 - [赛鸽常备遗传变异的自然选择印记](../papers/racing-pigeon-selection-signatures.md)
 - [遗传学研究](genetics.md)
+
+---
+
+## 主站检测服务
+
+了解更多赛鸽基因检测服务，欢迎访问 [赛诺基因检测中心主站 → 知识中心](https://senopigeon.com/zhishi/)。
