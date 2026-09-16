@@ -1,5 +1,30 @@
 {% extends "base.html" %}
+{% set is_en = (page and page.url and page.url.startswith('en/')) %}
+{% set pg_lang = "en" if is_en else "zh-CN" %}
+{% set page_title = (page.meta.title if page and page.meta and page.meta.title else (page.title if page and page.title else None)) %}
+{% set brand = "PigeonGene Research" %}
+{% set org_name = "Zhangjiakou SENO Biotechnology Co., Ltd." if is_en else "张家口赛诺生物科技有限公司" %}
+{% set org_desc = "National High-Tech Enterprise focused on racing pigeon performance gene testing, pathogen detection, and DNA identification / parentage testing." if is_en else "国家高新技术企业，专注赛鸽飞行能力基因检测、病毒检测与 DNA 身份证/亲缘鉴定。" %}
+{% set awards = ["National High-Tech Enterprise", "Zhangjiakou Key Genetic Testing Laboratory", "Technology-based SME"] if is_en else ["国家高新技术企业", "张家口市重点基因检测实验室", "科技型中小企业"] %}
+{% set knows_about = ["racing pigeon performance gene testing", "racing pigeon pathogen detection", "DNA identification", "parentage testing", "real-time quantitative PCR", "avian molecular diagnostics"] if is_en else ["赛鸽飞行能力基因检测", "赛鸽病毒检测", "DNA 身份证", "亲缘鉴定", "实时荧光定量 PCR", "禽类分子诊断"] %}
+{% set site_name_i18n = "PigeonGene Research Center" if is_en else config.site_name %}
+{% set site_desc_i18n = "Racing pigeon research center: verifiable scientific literature, research directions, methodology and evidence grading." if is_en else config.site_description %}
+
+{% block htmltitle %}
+  {% set _t = (page.meta.title if page and page.meta and page.meta.title else (page.title if page and page.title else site_name_i18n)) %}
+  {% set _full = _t ~ " - " ~ brand %}
+  <title>{% if _full | length <= 60 %}{{ _full }}{% elif _t | length <= 60 %}{{ _t }}{% else %}{{ _t[:57] ~ "..." }}{% endif %}</title>
+{% endblock %}
+
 {% block extrahead %}
+  {% set _base = "https://research.senopigeon.com/" %}
+  {% set _rel = page.url if page and page.url else "" %}
+  {% set _zh = _base ~ (_rel[3:] if is_en else _rel) %}
+  {% set _en = _base ~ (_rel if is_en else "en/" ~ _rel) %}
+  <link rel="alternate" hreflang="zh" href="{{ _zh }}">
+  <link rel="alternate" hreflang="en" href="{{ _en }}">
+  <link rel="alternate" hreflang="x-default" href="{{ _zh }}">
+  {% if is_en %}<script>document.documentElement.lang = "en";</script>{% endif %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -7,24 +32,24 @@
       {
         "@type": "Organization",
         "@id": "https://research.senopigeon.com/#organization",
-        "name": "张家口赛诺生物科技有限公司",
+        "name": {{ org_name | tojson }},
         "alternateName": ["PigeonGene · SENO Biotech", "赛诺生物"],
         "legalName": "张家口赛诺生物科技有限公司",
         "url": "https://senopigeon.com",
         "logo": "https://senopigeon.com/wp-content/uploads/cropped-cropped-LOGO.png",
-        "description": "国家高新技术企业，专注赛鸽飞行能力基因检测、病毒检测与 DNA 身份证/亲缘鉴定。",
+        "description": {{ org_desc | tojson }},
         "foundingDate": "2014",
         "numberOfEmployees": { "@type": "QuantitativeValue", "value": 15 },
-        "award": ["国家高新技术企业", "张家口市重点基因检测实验室", "科技型中小企业"],
-        "knowsAbout": ["赛鸽飞行能力基因检测", "赛鸽病毒检测", "DNA 身份证", "亲缘鉴定", "实时荧光定量 PCR", "禽类分子诊断"],
+        "award": {{ awards | tojson }},
+        "knowsAbout": {{ knows_about | tojson }},
         "areaServed": "Worldwide",
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "CN",
-          "addressRegion": "河北省",
-          "addressLocality": "张家口市",
+          "addressRegion": {{ ("Hebei" if is_en else "河北省") | tojson }},
+          "addressLocality": {{ ("Zhangjiakou" if is_en else "张家口市") | tojson }},
           "postalCode": "075000",
-          "streetAddress": "桥东区北硅谷 3 号楼"
+          "streetAddress": {{ ("Building 3, North Silicon Valley, Qiaodong District" if is_en else "桥东区北硅谷 3 号楼") | tojson }}
         },
         "email": "martin@senobiocorp.com",
         "telephone": "+86 13323237275",
@@ -44,86 +69,86 @@
       {
         "@type": "Service",
         "@id": "https://research.senopigeon.com/#service-performance-dna-testing",
-        "name": "赛鸽飞行能力基因检测",
+        "name": {{ ("Racing Pigeon Performance Gene Testing" if is_en else "赛鸽飞行能力基因检测") | tojson }},
         "serviceType": "Racing Pigeon Performance DNA Testing",
-        "description": "基于实时荧光定量 PCR 的赛鸽飞行能力基因检测，覆盖 LDHA、DRD4、CRY1、MSTN、LRP8、GSR、F-KER、CASK 八大性能基因位点，出具 DNA 检测报告与育种建议。",
+        "description": {{ ("Real-time quantitative PCR panel covering eight performance-related loci (LDHA, DRD4, CRY1, MSTN, LRP8, GSR, F-KER, CASK), reported with a DNA test report and breeding reference notes." if is_en else "基于实时荧光定量 PCR 的赛鸽飞行能力基因检测，覆盖 LDHA、DRD4、CRY1、MSTN、LRP8、GSR、F-KER、CASK 八大性能基因位点，出具 DNA 检测报告与育种建议。") | tojson }},
         "provider": { "@id": "https://research.senopigeon.com/#organization" },
         "areaServed": "Worldwide",
         "url": "https://senopigeon.com/",
         "category": "Genetic Testing",
-        "inLanguage": "zh-CN"
+        "inLanguage": "{{ pg_lang }}"
       },
       {
         "@type": "Service",
         "@id": "https://research.senopigeon.com/#service-virus-detection",
-        "name": "赛鸽病毒检测",
+        "name": {{ ("Racing Pigeon Pathogen Detection" if is_en else "赛鸽病毒检测") | tojson }},
         "serviceType": "Pigeon Pathogen Detection",
-        "description": "赛鸽常见病原的分子检测，覆盖病毒、细菌、寄生虫等 12 种病原的 PCR 检测，用于鸽群健康管理与疾病防控。",
+        "description": {{ ("Molecular detection of 12 common racing pigeon pathogens (viruses, bacteria, fungi and parasites) by PCR, used for flock health management and disease control." if is_en else "赛鸽常见病原的分子检测，覆盖病毒、细菌、寄生虫等 12 种病原的 PCR 检测，用于鸽群健康管理与疾病防控。") | tojson }},
         "provider": { "@id": "https://research.senopigeon.com/#organization" },
         "areaServed": "Worldwide",
         "url": "https://senopigeon.com/",
         "category": "Genetic Testing",
-        "inLanguage": "zh-CN"
+        "inLanguage": "{{ pg_lang }}"
       },
       {
         "@type": "Service",
         "@id": "https://research.senopigeon.com/#service-dna-id-parentage",
-        "name": "DNA 身份证与亲缘鉴定",
+        "name": {{ ("DNA Identification & Parentage Testing" if is_en else "DNA 身份证与亲缘鉴定") | tojson }},
         "serviceType": "Pigeon DNA Identification & Parentage Testing",
-        "description": "赛鸽 DNA 身份证与亲缘鉴定，用于血统溯源、亲子鉴定与种鸽管理。",
+        "description": {{ ("Racing pigeon DNA identification and parentage testing for pedigree traceability, parentage verification and breeder management." if is_en else "赛鸽 DNA 身份证与亲缘鉴定，用于血统溯源、亲子鉴定与种鸽管理。") | tojson }},
         "provider": { "@id": "https://research.senopigeon.com/#organization" },
         "areaServed": "Worldwide",
         "url": "https://senopigeon.com/",
         "category": "Genetic Testing",
-        "inLanguage": "zh-CN"
+        "inLanguage": "{{ pg_lang }}"
       },
       {
         "@type": "WebSite",
         "@id": "https://research.senopigeon.com/#website",
-        "name": "PigeonGene 科研中心",
+        "name": {{ site_name_i18n | tojson }},
         "url": "https://research.senopigeon.com/",
-        "description": "赛鸽科研中心：真实可追溯文献、研究方向、方法论与证据分级，坚持科学严谨、绝不伪造",
+        "description": {{ site_desc_i18n | tojson }},
         "publisher": { "@id": "https://research.senopigeon.com/#organization" },
-        "inLanguage": "zh-CN"
+        "inLanguage": "{{ pg_lang }}"
       },
       {% if page and page.meta and page.meta.schema_type == 'article' %}
       {
         "@type": "Article",
         "@id": "{{ page.canonical_url }}#article",
-        "headline": "{{ page.title }}",
-        "description": "{{ page.meta.description }}",
+        "headline": {{ page_title | tojson }},
+        "description": {{ page.meta.description | tojson }},
         "url": "{{ page.canonical_url }}",
         "author": { "@id": "https://research.senopigeon.com/#organization" },
         "publisher": { "@id": "https://research.senopigeon.com/#organization" },
-        "inLanguage": "zh-CN",
+        "inLanguage": "{{ pg_lang }}",
         "mainEntityOfPage": "{{ page.canonical_url }}"
       },
       {% elif page and page.meta and page.meta.schema_type == 'medicalcondition' %}
       {
         "@type": "MedicalWebPage",
         "@id": "{{ page.canonical_url }}#medicalwebpage",
-        "name": "{{ page.title }}",
-        "description": "{{ page.meta.description }}",
+        "name": {{ page_title | tojson }},
+        "description": {{ page.meta.description | tojson }},
         "url": "{{ page.canonical_url }}",
         "mainEntity": {
           "@type": "MedicalCondition",
-          "name": "{{ page.title }}",
-          "description": "{{ page.meta.description }}",
+          "name": {{ page_title | tojson }},
+          "description": {{ page.meta.description | tojson }},
           "url": "{{ page.canonical_url }}"
         },
         "publisher": { "@id": "https://research.senopigeon.com/#organization" },
-        "inLanguage": "zh-CN"
+        "inLanguage": "{{ pg_lang }}"
       },
       {% elif page and page.meta and page.meta.schema_type == 'scholarlyarticle' %}
       {
         "@type": "ScholarlyArticle",
         "@id": "{{ page.canonical_url }}#scholarlyarticle",
-        "headline": "{{ page.title }}",
-        "description": "{{ page.meta.description }}",
+        "headline": {{ page_title | tojson }},
+        "description": {{ page.meta.description | tojson }},
         "url": "{{ page.canonical_url }}",
         "author": { "@id": "https://research.senopigeon.com/#organization" },
         "publisher": { "@id": "https://research.senopigeon.com/#organization" },
-        "inLanguage": "zh-CN",
+        "inLanguage": "{{ pg_lang }}",
         "mainEntityOfPage": "{{ page.canonical_url }}"
       },
       {% elif page and page.meta and page.meta.schema_type == 'faqpage' %}
@@ -131,30 +156,30 @@
         "@type": "FAQPage",
         "@id": "{{ page.canonical_url }}#faqpage",
         "url": "{{ page.canonical_url }}",
-        "inLanguage": "zh-CN"
+        "inLanguage": "{{ pg_lang }}"
       },
       {% elif page and page.meta and page.meta.schema_type == 'definedtermset' %}
       {
         "@type": "DefinedTermSet",
         "@id": "{{ page.canonical_url }}#definedtermset",
-        "name": "{{ page.title }}",
-        "description": "{{ page.meta.description }}",
+        "name": {{ page_title | tojson }},
+        "description": {{ page.meta.description | tojson }},
         "url": "{{ page.canonical_url }}"
       },
       {% elif page and page.meta and page.meta.schema_type == 'collectionpage' %}
       {
         "@type": "CollectionPage",
         "@id": "{{ page.canonical_url }}#collectionpage",
-        "name": "{{ page.title }}",
-        "description": "{{ page.meta.description }}",
+        "name": {{ page_title | tojson }},
+        "description": {{ page.meta.description | tojson }},
         "url": "{{ page.canonical_url }}"
       },
       {% elif page and page.meta and page.meta.schema_type == 'home' %}
       {
         "@type": "WebPage",
         "@id": "{{ page.canonical_url }}#webpage",
-        "name": "{{ page.title }}",
-        "description": "{{ page.meta.description }}",
+        "name": {{ page_title | tojson }},
+        "description": {{ page.meta.description | tojson }},
         "url": "{{ page.canonical_url }}",
         "about": { "@id": "https://research.senopigeon.com/#organization" }
       },
@@ -164,13 +189,13 @@
         "@type": "FAQPage",
         "@id": "{{ page.canonical_url }}#faqpage",
         "url": "{{ page.canonical_url }}",
-        "inLanguage": "zh-CN",
+        "inLanguage": "{{ pg_lang }}",
         "mainEntity": [
           {% for item in page.meta.faq %}
           {
             "@type": "Question",
-            "name": "{{ item.q }}",
-            "acceptedAnswer": { "@type": "Answer", "text": "{{ item.a }}" }
+            "name": {{ item.q | tojson }},
+            "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | tojson }} }
           }{% if not loop.last %},{% endif %}
           {% endfor %}
         ]
@@ -180,11 +205,35 @@
         "@type": "BreadcrumbList",
         "@id": "{{ page.canonical_url }}#breadcrumb",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://research.senopigeon.com/" },
-          { "@type": "ListItem", "position": 2, "name": "{{ page.title }}", "item": "{{ page.canonical_url }}" }
+          { "@type": "ListItem", "position": 1, "name": {{ ("Home" if is_en else "首页") | tojson }}, "item": "https://research.senopigeon.com/" },
+          { "@type": "ListItem", "position": 2, "name": {{ page_title | tojson }}, "item": "{{ page.canonical_url }}" }
         ]
       }
     ]
   }
   </script>
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+  {% set is_en = (page and page.url and page.url.startswith('en/')) %}
+  {% set _base = "https://research.senopigeon.com/" %}
+  {% set _rel = page.url if page and page.url else "" %}
+  {% set _zh = _base ~ (_rel[3:] if is_en else _rel) %}
+  {% set _en = _base ~ (_rel if is_en else "en/" ~ _rel) %}
+  <div class="pg-lang md-typeset">
+    <div class="md-grid pg-lang__inner">
+      <span class="pg-lang__label">Language / 语言</span>
+      {% if is_en %}
+      <a href="{{ _zh }}" hreflang="zh" lang="zh-CN">中文版</a>
+      {% else %}
+      <a href="{{ _en }}" hreflang="en" lang="en">English</a>
+      {% endif %}
+    </div>
+  </div>
+  <style>
+    .pg-lang { border-top: 1px solid var(--md-default-fg-color--lightest); font-size: .7rem; }
+    .pg-lang__inner { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; padding: .75rem 0; }
+    .pg-lang__label { font-weight: 700; color: var(--md-default-fg-color--light); }
+  </style>
 {% endblock %}

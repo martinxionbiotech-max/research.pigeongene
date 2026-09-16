@@ -59,6 +59,36 @@ nav:
       - 文献阅读方法: research/reading-literature.md
   - 术语表: glossary.md
 
+  - English:
+      - Overview: en/index.md
+      - Literature:
+          - Literature Index: en/papers/index.md
+          - MSTN Exon 3 SNPs in Domestic Pigeons: en/papers/mstn-polymorphism-domestic-pigeon.md
+          - Genotype Profile and Racing Performance: en/papers/genotype-profile-racing-performance.md
+          - Selection Signatures in Racing Pigeons: en/papers/racing-pigeon-selection-signatures.md
+          - Avian Respiratory System Biology: en/papers/avian-respiratory-biology.md
+          - LDHA Polymorphism and Survivability: en/papers/ldha-snp-racing-performance.md
+          - Introduction to Quantitative Genetics: en/papers/quantitative-genetics-textbook.md
+          - Pigeon Reference Genome and Crest: en/papers/pigeon-reference-genome.md
+          - Pigeon Divergence and Feral Ancestry: en/papers/pigeon-divergence-ancestry.md
+          - Avian Genome Evolution and Adaptation: en/papers/avian-genome-evolution.md
+      - Research Directions:
+          - Directions Overview: en/research/index.md
+          - Genetics Research: en/research/genetics.md
+          - Performance Research: en/research/performance.md
+          - Homing Research: en/research/homing.md
+          - Endurance Research: en/research/endurance.md
+          - Muscle Physiology: en/research/muscle-physiology.md
+          - Genetic Markers: en/research/genetic-markers.md
+          - DNA Testing: en/research/dna-testing.md
+          - Methodology: en/research/methodology.md
+          - Evidence Grading: en/research/evidence-grading.md
+          - How to Read the Literature: en/research/reading-literature.md
+      - Glossary: en/glossary.md
+
+hooks:
+  - hooks/i18n_lang.py
+
 markdown_extensions:
   - admonition
   - attr_list
