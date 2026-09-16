@@ -17,7 +17,6 @@
 - [遗传标记](https://research.senopigeon.com/research/genetic-markers/)
 - [DNA 检测](https://research.senopigeon.com/research/dna-testing/)
 - [方法论](https://research.senopigeon.com/research/methodology/)
-- [方法论](https://research.senopigeon.com/methodology/)
 - [术语表](https://research.senopigeon.com/glossary/)
 
 ## 内容政策

@@ -57,7 +57,6 @@ nav:
       - 方法论: research/methodology.md
       - 证据分级: research/evidence-grading.md
       - 文献阅读方法: research/reading-literature.md
-  - 方法论: methodology.md
   - 术语表: glossary.md
 
 markdown_extensions:

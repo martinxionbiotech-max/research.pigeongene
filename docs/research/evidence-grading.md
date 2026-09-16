@@ -63,7 +63,7 @@ schema_type: article
 
 ## 相关主题
 
-- [方法论](../methodology.md)
+- [方法论](methodology.md)
 - [科研文献总览](../papers/index.md)
 
 ---
