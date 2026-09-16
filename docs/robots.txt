@@ -2,3 +2,16 @@ User-agent: *
 Allow: /
 
 Sitemap: https://research.senopigeon.com/sitemap.xml
+# AI crawlers (GEO/AIO-friendly)
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
