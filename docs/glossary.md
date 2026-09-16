@@ -1,6 +1,6 @@
 ---
 title: 术语表
-description: 
+description: 赛鸽科研术语表：遗传关联研究、数量遗传学、分子检测相关的核心术语解释，帮助读者理解科研文献中的概念。
 schema_type: definedtermset
 ---
 
