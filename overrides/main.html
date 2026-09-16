@@ -159,6 +159,23 @@
         "about": { "@id": "https://research.senopigeon.com/#organization" }
       },
       {% endif %}
+      {% if page and page.meta and page.meta.faq %}
+      {
+        "@type": "FAQPage",
+        "@id": "{{ page.canonical_url }}#faqpage",
+        "url": "{{ page.canonical_url }}",
+        "inLanguage": "zh-CN",
+        "mainEntity": [
+          {% for item in page.meta.faq %}
+          {
+            "@type": "Question",
+            "name": "{{ item.q }}",
+            "acceptedAnswer": { "@type": "Answer", "text": "{{ item.a }}" }
+          }{% if not loop.last %},{% endif %}
+          {% endfor %}
+        ]
+      },
+      {% endif %}
       {
         "@type": "BreadcrumbList",
         "@id": "{{ page.canonical_url }}#breadcrumb",
