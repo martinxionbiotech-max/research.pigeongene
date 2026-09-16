@@ -8,7 +8,7 @@ schema_type: scholarlyarticle
 
 **英文标题**：Single nucleotide polymorphism in the myostatin gene exon 3 of different domestic pigeon breeds
 
-**作者**：A. Dybus 等（2013）
+**作者**：A. Dybus、W. S. Proskura、S. Sadkowski、E. Pawlina（2013）
 
 **期刊**：Veterinární medicína
 

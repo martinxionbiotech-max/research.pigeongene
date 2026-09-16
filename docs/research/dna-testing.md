@@ -74,7 +74,7 @@ DNA 检测为赛鸽管理提供了科学工具：
 ## 相关文献
 
 - [基因型谱与赛鸽比赛成绩关系的前瞻性研究](../papers/genotype-profile-racing-performance.md)
-- [LDHA 基因单核苷酸多态性与信鸽比赛成绩](../papers/ldha-snp-racing-performance.md)
+- [LDHA 基因多态性与赛鸽竞翔存活率](../papers/ldha-snp-racing-performance.md)
 - [遗传标记](genetic-markers.md)
 
 ---

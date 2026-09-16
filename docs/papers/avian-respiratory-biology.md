@@ -6,13 +6,15 @@ schema_type: scholarlyarticle
 
 # 鸟类呼吸系统生物学
 
-**英文标题**：Avian respiratory biology
+**英文标题**：What it takes to fly: the structural and functional respiratory refinements in birds and bats
 
-**作者**：美国国家医学图书馆（2004）
+**作者**：J. N. Maina（2000）
 
-**期刊**：PMC Article
+**期刊**：Journal of Experimental Biology
 
-**PubMed**：[https://pubmed.ncbi.nlm.nih.gov/15249475/](https://pubmed.ncbi.nlm.nih.gov/15249475/)
+**DOI**：[https://doi.org/10.1242/jeb.203.20.3045](https://doi.org/10.1242/jeb.203.20.3045)
+
+**PubMed**：[https://pubmed.ncbi.nlm.nih.gov/11003817/](https://pubmed.ncbi.nlm.nih.gov/11003817/)
 
 ## 通俗解读（打个比方）
 

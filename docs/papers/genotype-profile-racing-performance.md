@@ -10,7 +10,9 @@ schema_type: scholarlyarticle
 
 **作者**：Geert Kolvenbag 等（2022）
 
-**期刊**：PMC Article
+**期刊**：Journal of Applied Genetics
+
+**DOI**：[https://doi.org/10.1007/s13353-022-00697-w](https://doi.org/10.1007/s13353-022-00697-w)
 
 **PubMed**：[https://pubmed.ncbi.nlm.nih.gov/35505002/](https://pubmed.ncbi.nlm.nih.gov/35505002/)
 

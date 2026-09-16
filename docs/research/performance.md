@@ -26,7 +26,7 @@ schema_type: article
 
 尽管性能是多基因性状，研究者仍通过候选基因方法寻找"贡献较大的零件"：
 
-- **LDHA**（乳酸脱氢酶 A）：研究提示其多态性可能与**短距离速度**表现存在关联（Proskura 2014）；
+- **LDHA**（乳酸脱氢酶 A）：研究提示其多态性可能与竞翔存活率存在关联（Ramadan 2018）；
 - **DRD4**（多巴胺受体）：与认知、探索行为相关，被研究与归巢/行为表现相关；
 - **MSTN**（肌生成抑制素）：与肌肉发育相关（Dybus 2013）。
 
@@ -57,7 +57,7 @@ schema_type: article
 ## 相关文献
 
 - [基因型谱与赛鸽比赛成绩关系的前瞻性研究](../papers/genotype-profile-racing-performance.md)
-- [LDHA 基因单核苷酸多态性与信鸽比赛成绩](../papers/ldha-snp-racing-performance.md)
+- [LDHA 基因多态性与赛鸽竞翔存活率](../papers/ldha-snp-racing-performance.md)
 - [赛鸽常备遗传变异的自然选择印记](../papers/racing-pigeon-selection-signatures.md)
 
 ---
